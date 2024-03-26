@@ -49,7 +49,3 @@ Develop a digital system capable of sampling 8-bit data from any available analo
 - Zak Konik
 - Nick Engle
 - Olaoluwayimika olugbenle
-
----
-
-Feel free to modify this README file according to your specific project needs. Good luck with your project! If you have any questions or need further assistance, don't hesitate to ask.
