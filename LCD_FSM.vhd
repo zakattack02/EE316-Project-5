@@ -30,7 +30,7 @@ architecture Behavioral of LCD_FSM is
 
 type stateType is (Zero_Rising, One, Zero_Falling);   --Ready, Set, Pulse, Done
     signal state    : stateType;	    
-    signal cnt      : integer range 0 to CntMax;                       --use CntMax
+    signal cnt      : integer range 0 to CntMax;      --use CntMax
     --signal Bit_cnt  : integer;
 	 signal clock_en : std_logic := '0';
     --signal Data     : std_logic_vector(7 downto 0); -- byte to send to display
@@ -49,7 +49,7 @@ begin
 	    cnt<=0;
 	    clock_en<='0';
   elsif rising_edge(clock) then
-	if cnt = CntMax then                                                  --Use CntMax 
+	if cnt = CntMax then                           --Use CntMax 
 		  clock_en <= '1';
 		  cnt <=0;
 	else

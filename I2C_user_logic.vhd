@@ -84,7 +84,7 @@ begin
 					enable<='0';
 				else
 					reset<='1';					-- Sent to I2C master to start ready transaction
-					address<="0100111";		-- Hardcoded to X"27", LCD's default address
+					address<="0100111";			-- Hardcoded to X"27", LCD's default address
 					rw_sig<='0';				-- Only writing in this project
 					State<=write;
 				end if;

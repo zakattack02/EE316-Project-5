@@ -39,7 +39,7 @@ signal data_wr    : STD_LOGIC_VECTOR(7 DOWNTO 0); --data to write
 signal address_LCD0,address_LCD1 : std_LOGIC_vector(7 downto 0);
 signal data_lcd0,data_lcd1,data_lcd2,data_lcd3 : std_LOGIC_vector(7 downto 0);
 
-signal rs_in      : STD_LOGIC;                    -- temp register select
+signal rs_in      : STD_LOGIC;                     -- temp register select
 signal rs_in0      : STD_LOGIC;                    -- temp register select
 signal rs_in1      : STD_LOGIC;                    -- temp register select
 signal rs_in2      : STD_LOGIC;                    -- temp register select

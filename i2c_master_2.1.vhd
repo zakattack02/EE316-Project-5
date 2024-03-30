@@ -156,7 +156,7 @@ BEGIN
           WHEN wr =>                         --write byte of transaction
             busy <= '1';                     --resume busy if continuous mode
             IF(bit_cnt = 0) THEN             --write byte transmit finished
-				  busy<='0'; 						   --!!MODIFIED TO SEND BUSY FLAG AT END OF WRITE
+				  busy<='0'; 						             --!!MODIFIED TO SEND BUSY FLAG AT END OF WRITE
               sda_int <= '1';                --release sda for slave acknowledge
               bit_cnt <= 7;                  --reset bit counter for "byte" states
               state <= slv_ack2;             --go to slave acknowledge (write)
@@ -174,7 +174,7 @@ BEGIN
               ELSE                           --stopping or continuing with a write
                 sda_int <= '1';              --send a no-acknowledge (before stop or repeated start)
               END IF;
-				  busy <= '0';							--!!MODIFIED to send busy flag at end of every read transaction
+				  busy <= '0';							         --!!MODIFIED to send busy flag at end of every read transaction
               bit_cnt <= 7;                  --reset bit counter for "byte" states
               data_rd <= data_rx;            --output received data
               state <= mstr_ack;             --go to master acknowledge
@@ -185,7 +185,7 @@ BEGIN
 				
           WHEN slv_ack2 =>                   --slave acknowledge bit (write)
             IF(ena = '1') THEN               --continue transaction
-             -- busy <= '0';                   --!!modified
+             -- busy <= '0';                 --!!modified
               addr_rw <= addr & rw;          --collect requested slave address and command
               data_tx <= data_wr;            --collect requested data to write
               IF(addr_rw = addr & rw) THEN   --continue transaction with another write
