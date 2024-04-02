@@ -1,0 +1,195 @@
+!SESSION 2024-04-02 12:13:19.440 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Temp/EE316/p5/xadc_example/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk
+
+This is a continuation of log file C:\Temp\EE316\p5\xadc_example\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.sdk\.metadata\.bak_0.log
+Created Time: 2024-04-02 14:20:11.237
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.238
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.245
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370B7C202A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.246
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.263
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.264
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.270
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370B7C202A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.270
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.286
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.287
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.292
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370B7C202A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.294
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.311
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.312
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.319
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370B7C202A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.319
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.336
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.337
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.342
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370B7C202A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.343
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.360
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.360
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.367
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Cora Z7 - 7007S 210370B7C202A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.368
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.384
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z007s (idcode 13723093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.385
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.405
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Cora Z7 - 7007S 210370B7C202A" && level == 0}], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.407
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.408
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.409
+!MESSAGE XSCT Command: [source C:/Temp/EE316/p5/xadc_example/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.421
+!MESSAGE XSCT command with result: [source C:/Temp/EE316/p5/xadc_example/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.422
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.443
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:11.444
+!MESSAGE XSCT Command: [loadhw -hw C:/Temp/EE316/p5/xadc_example/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.109
+!MESSAGE XSCT command with result: [loadhw -hw C:/Temp/EE316/p5/xadc_example/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_12]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.110
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.111
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.111
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.154
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.155
+!MESSAGE XSCT Command: [stop], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.183
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.183
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.452
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.453
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.459
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.459
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.481
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.481
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.546
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.547
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.567
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.568
+!MESSAGE XSCT Command: [dow C:/Temp/EE316/p5/xadc_example/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/Cora_Z7_07S_XADC_bsp_xgpio_intr_tapp_example_2/Debug/Cora_Z7_07S_XADC_bsp_xgpio_intr_tapp_example_2.elf], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.715
+!MESSAGE XSCT command with result: [dow C:/Temp/EE316/p5/xadc_example/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/Cora_Z7_07S_XADC_bsp_xgpio_intr_tapp_example_2/Debug/Cora_Z7_07S_XADC_bsp_xgpio_intr_tapp_example_2.elf], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.716
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.721
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.801
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.875
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370B7C202A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.876
+!MESSAGE XSCT Command: [con], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 14:20:13.884
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 15:16:38.322
+!MESSAGE XSCT Command: [disconnect tcfchan#14], Thread: Thread-1294
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-02 15:16:38.326
+!MESSAGE XSCT command with result: [disconnect tcfchan#14], Result: [null, ]. Thread: Thread-1294
