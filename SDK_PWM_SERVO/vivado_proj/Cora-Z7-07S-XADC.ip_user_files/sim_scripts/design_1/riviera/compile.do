@@ -17,7 +17,10 @@ vlib riviera/axi_register_slice_v2_1_19
 vlib riviera/fifo_generator_v13_2_4
 vlib riviera/axi_data_fifo_v2_1_18
 vlib riviera/axi_crossbar_v2_1_20
+vlib riviera/lib_pkg_v1_0_2
+vlib riviera/axi_timer_v2_0_21
 vlib riviera/axi_protocol_converter_v2_1_19
+vlib riviera/xlconcat_v2_1_3
 
 vmap xilinx_vip riviera/xilinx_vip
 vmap xil_defaultlib riviera/xil_defaultlib
@@ -35,7 +38,10 @@ vmap axi_register_slice_v2_1_19 riviera/axi_register_slice_v2_1_19
 vmap fifo_generator_v13_2_4 riviera/fifo_generator_v13_2_4
 vmap axi_data_fifo_v2_1_18 riviera/axi_data_fifo_v2_1_18
 vmap axi_crossbar_v2_1_20 riviera/axi_crossbar_v2_1_20
+vmap lib_pkg_v1_0_2 riviera/lib_pkg_v1_0_2
+vmap axi_timer_v2_0_21 riviera/axi_timer_v2_0_21
 vmap axi_protocol_converter_v2_1_19 riviera/axi_protocol_converter_v2_1_19
+vmap xlconcat_v2_1_3 riviera/xlconcat_v2_1_3
 
 vlog -work xilinx_vip  -sv2k12 "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "C:/Xilinx/Vivado/2019.1/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -55,11 +61,6 @@ vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../Cora-Z7-07S-XADC.srcs/so
 
 vcom -work xpm -93 \
 "C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd" \
-
-vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
-"../../../bd/design_1/ipshared/43fd/hdl/PWM_AXI.sv" \
-"../../../bd/design_1/ipshared/43fd/hdl/PWM_v2_0.sv" \
-"../../../bd/design_1/ip/design_1_PWM_0_0/sim/design_1_PWM_0_0.sv" \
 
 vcom -work axi_lite_ipif_v3_0_4 -93 \
 "../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
@@ -137,11 +138,28 @@ vcom -work xil_defaultlib -93 \
 "../../../bd/design_1/ipshared/9cc4/hdl/AXI_PWM_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_AXI_PWM_0_0/sim/design_1_AXI_PWM_0_0.vhd" \
 
+vcom -work lib_pkg_v1_0_2 -93 \
+"../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+
+vcom -work axi_timer_v2_0_21 -93 \
+"../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -93 \
+"../../../bd/design_1/ip/design_1_axi_timer_0_0/sim/design_1_axi_timer_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_timer_1_0/sim/design_1_axi_timer_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_timer_2_0/sim/design_1_axi_timer_2_0.vhd" \
+
 vlog -work axi_protocol_converter_v2_1_19  -v2k5 "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+
+vlog -work xlconcat_v2_1_3  -v2k5 "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" \
 
 vcom -work xil_defaultlib -93 \
 "../../../bd/design_1/sim/design_1.vhd" \

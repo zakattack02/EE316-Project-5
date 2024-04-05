@@ -17,11 +17,6 @@
 -makelib ies_lib/xpm \
   "C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
--makelib ies_lib/xil_defaultlib -sv \
-  "../../../bd/design_1/ipshared/43fd/hdl/PWM_AXI.sv" \
-  "../../../bd/design_1/ipshared/43fd/hdl/PWM_v2_0.sv" \
-  "../../../bd/design_1/ip/design_1_PWM_0_0/sim/design_1_PWM_0_0.sv" \
--endlib
 -makelib ies_lib/axi_lite_ipif_v3_0_4 \
   "../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
 -endlib
@@ -98,11 +93,28 @@
   "../../../bd/design_1/ipshared/9cc4/hdl/AXI_PWM_v1_0.vhd" \
   "../../../bd/design_1/ip/design_1_AXI_PWM_0_0/sim/design_1_AXI_PWM_0_0.vhd" \
 -endlib
+-makelib ies_lib/lib_pkg_v1_0_2 \
+  "../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+-endlib
+-makelib ies_lib/axi_timer_v2_0_21 \
+  "../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/a788/hdl/axi_timer_v2_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_timer_0_0/sim/design_1_axi_timer_0_0.vhd" \
+  "../../../bd/design_1/ip/design_1_axi_timer_1_0/sim/design_1_axi_timer_1_0.vhd" \
+  "../../../bd/design_1/ip/design_1_axi_timer_2_0/sim/design_1_axi_timer_2_0.vhd" \
+-endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_19 \
   "../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+-endlib
+-makelib ies_lib/xlconcat_v2_1_3 \
+  "../../../../Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/sim/design_1.vhd" \

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/synth_1'
+HD_PWD='C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

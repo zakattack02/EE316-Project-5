@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Thu Apr  4 13:26:27 2024
+--Date        : Fri Apr  5 15:42:23 2024
 --Host        : CB195-UL-44 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -14,6 +14,8 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_wrapper is
   port (
     BTNs_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    Buzzer : out STD_LOGIC;
+    DC_motor : out STD_LOGIC;
     DDR_addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
     DDR_ba : inout STD_LOGIC_VECTOR ( 2 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
@@ -36,6 +38,7 @@ entity design_1_wrapper is
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     LEDs_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    PMOD_LEDs : out STD_LOGIC;
     PWM_servo : out STD_LOGIC;
     Vaux0_0_v_n : in STD_LOGIC;
     Vaux0_0_v_p : in STD_LOGIC;
@@ -56,15 +59,40 @@ entity design_1_wrapper is
     Vaux9_0_v_n : in STD_LOGIC;
     Vaux9_0_v_p : in STD_LOGIC;
     Vp_Vn_0_v_n : in STD_LOGIC;
-    Vp_Vn_0_v_p : in STD_LOGIC;
-    pwm_0 : out STD_LOGIC_VECTOR ( 2 downto 0 )
+    Vp_Vn_0_v_p : in STD_LOGIC
   );
 end design_1_wrapper;
 
 architecture STRUCTURE of design_1_wrapper is
   component design_1 is
   port (
-    pwm_0 : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    PWM_servo : out STD_LOGIC;
+    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    FIXED_IO_ddr_vrn : inout STD_LOGIC;
+    FIXED_IO_ddr_vrp : inout STD_LOGIC;
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    FIXED_IO_ps_clk : inout STD_LOGIC;
+    FIXED_IO_ps_porb : inout STD_LOGIC;
+    Vaux0_0_v_n : in STD_LOGIC;
+    Vaux0_0_v_p : in STD_LOGIC;
+    Vp_Vn_0_v_n : in STD_LOGIC;
+    Vp_Vn_0_v_p : in STD_LOGIC;
+    Vaux1_0_v_n : in STD_LOGIC;
+    Vaux1_0_v_p : in STD_LOGIC;
+    Vaux15_0_v_n : in STD_LOGIC;
+    Vaux15_0_v_p : in STD_LOGIC;
+    Vaux5_0_v_n : in STD_LOGIC;
+    Vaux5_0_v_p : in STD_LOGIC;
+    Vaux13_0_v_n : in STD_LOGIC;
+    Vaux13_0_v_p : in STD_LOGIC;
+    Vaux9_0_v_n : in STD_LOGIC;
+    Vaux9_0_v_p : in STD_LOGIC;
+    Vaux8_0_v_n : in STD_LOGIC;
+    Vaux8_0_v_p : in STD_LOGIC;
+    Vaux6_0_v_n : in STD_LOGIC;
+    Vaux6_0_v_p : in STD_LOGIC;
+    LEDs_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    BTNs_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -82,39 +110,17 @@ architecture STRUCTURE of design_1_wrapper is
     DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     Vaux12_0_v_n : in STD_LOGIC;
     Vaux12_0_v_p : in STD_LOGIC;
-    Vaux8_0_v_n : in STD_LOGIC;
-    Vaux8_0_v_p : in STD_LOGIC;
-    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    FIXED_IO_ddr_vrn : inout STD_LOGIC;
-    FIXED_IO_ddr_vrp : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC;
-    FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
-    Vaux5_0_v_n : in STD_LOGIC;
-    Vaux5_0_v_p : in STD_LOGIC;
-    Vp_Vn_0_v_n : in STD_LOGIC;
-    Vp_Vn_0_v_p : in STD_LOGIC;
-    Vaux0_0_v_n : in STD_LOGIC;
-    Vaux0_0_v_p : in STD_LOGIC;
-    Vaux6_0_v_n : in STD_LOGIC;
-    Vaux6_0_v_p : in STD_LOGIC;
-    Vaux15_0_v_n : in STD_LOGIC;
-    Vaux15_0_v_p : in STD_LOGIC;
-    Vaux1_0_v_n : in STD_LOGIC;
-    Vaux1_0_v_p : in STD_LOGIC;
-    Vaux13_0_v_n : in STD_LOGIC;
-    Vaux13_0_v_p : in STD_LOGIC;
-    Vaux9_0_v_n : in STD_LOGIC;
-    Vaux9_0_v_p : in STD_LOGIC;
-    LEDs_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    BTNs_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    PWM_servo : out STD_LOGIC
+    DC_motor : out STD_LOGIC;
+    Buzzer : out STD_LOGIC;
+    PMOD_LEDs : out STD_LOGIC
   );
   end component design_1;
 begin
 design_1_i: component design_1
      port map (
       BTNs_tri_i(3 downto 0) => BTNs_tri_i(3 downto 0),
+      Buzzer => Buzzer,
+      DC_motor => DC_motor,
       DDR_addr(14 downto 0) => DDR_addr(14 downto 0),
       DDR_ba(2 downto 0) => DDR_ba(2 downto 0),
       DDR_cas_n => DDR_cas_n,
@@ -137,6 +143,7 @@ design_1_i: component design_1
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
       LEDs_tri_o(3 downto 0) => LEDs_tri_o(3 downto 0),
+      PMOD_LEDs => PMOD_LEDs,
       PWM_servo => PWM_servo,
       Vaux0_0_v_n => Vaux0_0_v_n,
       Vaux0_0_v_p => Vaux0_0_v_p,
@@ -157,7 +164,6 @@ design_1_i: component design_1
       Vaux9_0_v_n => Vaux9_0_v_n,
       Vaux9_0_v_p => Vaux9_0_v_p,
       Vp_Vn_0_v_n => Vp_Vn_0_v_n,
-      Vp_Vn_0_v_p => Vp_Vn_0_v_p,
-      pwm_0(2 downto 0) => pwm_0(2 downto 0)
+      Vp_Vn_0_v_p => Vp_Vn_0_v_p
     );
 end STRUCTURE;

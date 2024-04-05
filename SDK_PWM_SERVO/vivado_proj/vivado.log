@@ -2,126 +2,25 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Apr  4 12:52:44 2024
-# Process ID: 6044
-# Current directory: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10496 C:\Users\englena\Documents\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.xpr
-# Log file: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/vivado.log
-# Journal file: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj\vivado.jou
+# Start of session at: Fri Apr  5 15:03:55 2024
+# Process ID: 3116
+# Current directory: C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11352 C:\Users\englena\Documents\SDK_PWM_SERVO\vivado_proj\Cora-Z7-07S-XADC.xpr
+# Log file: C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/vivado.log
+# Journal file: C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Temp/EE316/p5/xadc_example/Cora-Z7-07S-XADC-2018.2-1/vivado_proj' since last save.
+open_project C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/../Users/olaol/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store', nor could it be found using path 'C:/Users/olaol/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/lehmanta/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ipdefs/repo_0'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 797.684 ; gain = 139.816
-update_compile_order -fileset sources_1
-create_bd_design "design_2"
-Wrote  : <C:\Users\englena\Documents\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.srcs\sources_1\bd\design_2\design_2.bd> 
-create_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 998.297 ; gain = 51.953
-update_compile_order -fileset sources_1
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-Adding component instance block -- digilentinc.com:IP:PWM:2.0 - PWM_0
-Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
-Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
-Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
-Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
-Adding component instance block -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
-Successfully read diagram <design_1> from BD file <C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd>
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-set_property  ip_repo_paths  {c:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ipdefs/repo_0 C:/Users/englena/Documents/AXI_PWM/ip_repo} [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ipdefs/repo_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ipdefs/repo_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/englena/Documents/AXI_PWM/ip_repo'.
-set_property BOARD_PART_REPO_PATHS {C:/Users/lehmanta/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
-WARNING: [Board 49-91] Board repository path 'C:/Users/lehmanta/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
-set_param board.repoPaths {C:/Users/lehmanta/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}
-set_property BOARD_PART_REPO_PATHS {C:/Users/lehmanta/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
-set_param board.repoPaths {C:/Users/lehmanta/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:user:AXI_PWM:1.0 AXI_PWM_0
-endgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/AXI_PWM_0/S00_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins AXI_PWM_0/S00_AXI]
-Slave segment </AXI_PWM_0/S00_AXI/S00_AXI_reg> is being mapped into address space </processing_system7_0/Data> at <0x43C2_0000 [ 64K ]>
-set_property location {3 786 -107} [get_bd_cells AXI_PWM_0]
-startgroup
-create_bd_port -dir O PWM_servo
-connect_bd_net [get_bd_pins /AXI_PWM_0/PWM0] [get_bd_ports PWM_servo]
-endgroup
-save_bd_design
-Wrote  : <C:\Users\englena\Documents\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.srcs\sources_1\bd\design_1\design_1.bd> 
-Wrote  : <C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
-	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
-Wrote  : <C:\Users\englena\Documents\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.srcs\sources_1\bd\design_1\design_1.bd> 
-VHDL Output written to : C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.vhd
-VHDL Output written to : C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/sim/design_1.vhd
-VHDL Output written to : C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
-INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_PWM_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
-Exporting to file C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-[Thu Apr  4 13:17:26 2024] Launched synth_1...
-Run output will be captured here: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/synth_1/runme.log
-launch_runs impl_3 -jobs 6
-[Thu Apr  4 13:19:19 2024] Launched impl_3...
-Run output will be captured here: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/runme.log
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-reset_target all [get_files  C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
-export_ip_user_files -of_objects  [get_files  C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
-export_ip_user_files -of_objects  [get_files C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
-file delete -force C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
-update_compile_order -fileset sources_1
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_2/design_2.bd}
-export_ip_user_files -of_objects  [get_files C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_2/design_2.bd] -no_script -reset -force -quiet
-remove_files  C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_2/design_2.bd
-file delete -force C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_2
-set_property source_mgmt_mode DisplayOnly [current_project]
-report_ip_status -name ip_status 
-generate_target all [get_files  C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
-INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
-VHDL Output written to : C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.vhd
-VHDL Output written to : C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/sim/design_1.vhd
-VHDL Output written to : C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
-INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_PWM_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
-Exporting to file C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-generate_target: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1796.910 ; gain = 0.000
-export_ip_user_files -of_objects [get_files C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ip_user_files -ipstatic_source_dir C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/modelsim} {questa=C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/questa} {riviera=C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/riviera} {activehdl=C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-show_objects -name design_1 [get_bd_cells -hierarchical "*" ]
-make_wrapper -files [get_files C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -top
-add_files -norecurse C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
-close_bd_design [get_bd_designs design_1]
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 785.859 ; gain = 107.113
+open_bd_design {C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
 Adding component instance block -- digilentinc.com:IP:PWM:2.0 - PWM_0
 Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
 Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
@@ -131,79 +30,246 @@ Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - au
 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
 Adding component instance block -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
 Adding component instance block -- xilinx.com:user:AXI_PWM:1.0 - AXI_PWM_0
-Successfully read diagram <design_1> from BD file <C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd>
+Successfully read diagram <design_1> from BD file <C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 901.363 ; gain = 57.949
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0
+endgroup
+set_property location {3.5 1454 236} [get_bd_cells axi_timer_0]
+startgroup
+create_bd_port -dir O DC_motor
+connect_bd_net [get_bd_pins /axi_timer_0/pwm0] [get_bd_ports DC_motor]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_1
+endgroup
+startgroup
+create_bd_port -dir O Buzzer
+connect_bd_net [get_bd_pins /axi_timer_1/pwm0] [get_bd_ports Buzzer]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_timer_0/S_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_timer_0/S_AXI]
+Slave segment </axi_timer_0/S_AXI/Reg> is being mapped into address space </processing_system7_0/Data> at <0x4280_0000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_timer_1/S_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_timer_1/S_AXI]
+Slave segment </axi_timer_1/S_AXI/Reg> is being mapped into address space </processing_system7_0/Data> at <0x4281_0000 [ 64K ]>
+endgroup
+regenerate_bd_layout -routing
+set_property location {1419 195} [get_bd_ports PWM_servo]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_2
+endgroup
+startgroup
+create_bd_port -dir O PMOD_LEDs
+connect_bd_net [get_bd_pins /axi_timer_2/pwm0] [get_bd_ports PMOD_LEDs]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_timer_2/S_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_timer_2/S_AXI]
+Slave segment </axi_timer_2/S_AXI/Reg> is being mapped into address space </processing_system7_0/Data> at <0x4282_0000 [ 64K ]>
+regenerate_bd_layout -routing
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_nets PWM_0_pwm] [get_bd_cells PWM_0]
+delete_bd_objs [get_bd_ports pwm_0]
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+reset_target all [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+report_ip_status -name ip_status 
+reset_target all [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\englena\Documents\SDK_PWM_SERVO\vivado_proj\Cora-Z7-07S-XADC.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_PWM_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_2 .
+Exporting to file C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1180.777 ; gain = 181.137
+export_ip_user_files -of_objects [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ip_user_files -ipstatic_source_dir C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/modelsim} {questa=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/questa} {riviera=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/riviera} {activehdl=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+file delete -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+make_wrapper -files [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+add_files -norecurse C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+report_ip_status -name ip_status 
 reset_run synth_1
-launch_runs impl_3 -jobs 6
-[Thu Apr  4 13:33:12 2024] Launched synth_1...
-Run output will be captured here: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/synth_1/runme.log
-[Thu Apr  4 13:33:12 2024] Launched impl_3...
-Run output will be captured here: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/runme.log
-reset_run impl_3
-launch_runs impl_3 -jobs 6
-[Thu Apr  4 13:39:49 2024] Launched impl_3...
-Run output will be captured here: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/runme.log
-open_run impl_3
+launch_runs synth_1 -jobs 6
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_PWM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_2 .
+Exporting to file C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Apr  5 15:27:34 2024] Launched synth_1...
+Run output will be captured here: C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z007sclg400-1
 INFO: [Device 21-403] Loading part xc7z007sclg400-1
-INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 217 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.402 . Memory (MB): peak = 2496.625 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.402 . Memory (MB): peak = 2496.625 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2496.625 ; gain = 0.000
+Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xdc] for cell 'design_1_i/xadc_wiz_0/U0'
+Finished Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xdc] for cell 'design_1_i/xadc_wiz_0/U0'
+Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xdc] for cell 'design_1_i/axi_timer_0/U0'
+Finished Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xdc] for cell 'design_1_i/axi_timer_0/U0'
+Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_1_0/design_1_axi_timer_1_0.xdc] for cell 'design_1_i/axi_timer_1/U0'
+Finished Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_1_0/design_1_axi_timer_1_0.xdc] for cell 'design_1_i/axi_timer_1/U0'
+Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_2_0/design_1_axi_timer_2_0.xdc] for cell 'design_1_i/axi_timer_2/U0'
+Finished Parsing XDC File [c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_2_0/design_1_axi_timer_2_0.xdc] for cell 'design_1_i/axi_timer_2/U0'
+Parsing XDC File [C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/constrs_1/imports/constraints/Cora-Z7-07S-Master.xdc]
+Finished Parsing XDC File [C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/constrs_1/imports/constraints/Cora-Z7-07S-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1551.234 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 2496.625 ; gain = 0.000
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1670.996 ; gain = 387.062
+launch_runs impl_3 -to_step write_bitstream -jobs 6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2162.945 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 2180.312 ; gain = 15.371
+[Fri Apr  5 15:29:53 2024] Launched impl_3...
+Run output will be captured here: C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/runme.log
+file copy -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+
+file copy -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+
+file mkdir C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk
+file copy -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {4.5 1353 1262} [get_bd_cells xadc_wiz_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {4.5 1353 1262} [get_bd_cells xadc_wiz_0]'
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets axi_gpio_0_ip2intc_irpt]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property location {1 84 630} [get_bd_cells xlconcat_0]
+set_property -dict [list CONFIG.NUM_PORTS {4}] [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins axi_gpio_0/ip2intc_irpt] [get_bd_pins xlconcat_0/In0]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins processing_system7_0/IRQ_F2P]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins axi_timer_0/interrupt] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins axi_timer_1/interrupt] [get_bd_pins xlconcat_0/In2]
+connect_bd_net [get_bd_pins axi_timer_2/interrupt] [get_bd_pins xlconcat_0/In3]
+validate_bd_design
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+regenerate_bd_layout
+export_ip_user_files -of_objects  [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+file delete -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+reset_target all [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+save_bd_design
+Wrote  : <C:\Users\englena\Documents\SDK_PWM_SERVO\vivado_proj\Cora-Z7-07S-XADC.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+generate_target all [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_PWM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+Exporting to file C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2370.066 ; gain = 84.164
+export_ip_user_files -of_objects [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ip_user_files -ipstatic_source_dir C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/modelsim} {questa=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/questa} {riviera=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/riviera} {activehdl=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
 reset_run synth_1
 launch_runs impl_3 -to_step write_bitstream -jobs 6
-[Thu Apr  4 13:41:48 2024] Launched synth_1...
-Run output will be captured here: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/synth_1/runme.log
-[Thu Apr  4 13:41:48 2024] Launched impl_3...
-Run output will be captured here: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/runme.log
-refresh_design
-INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2019.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.383 . Memory (MB): peak = 2496.625 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.384 . Memory (MB): peak = 2496.625 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2496.625 ; gain = 0.000
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
-reset_run impl_3 -prev_step 
-launch_runs impl_3 -to_step write_bitstream -jobs 6
-[Thu Apr  4 13:55:37 2024] Launched impl_3...
-Run output will be captured here: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/runme.log
-file copy -force C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_3'
+[Fri Apr  5 15:43:26 2024] Launched synth_1...
+Run output will be captured here: C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/synth_1/runme.log
+[Fri Apr  5 15:43:26 2024] Launched impl_3...
+Run output will be captured here: C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/runme.log
+file mkdir C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk
+file copy -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
 
-launch_sdk -workspace C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-393] Launching SDK...
-INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
-INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
-file mkdir C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk
-file copy -force C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
-
-launch_sdk -workspace C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
-INFO: [Vivado 12-393] Launching SDK...
-INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  4 15:21:07 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  5 15:54:50 2024...

@@ -18,6 +18,9 @@ vhdl xil_defaultlib  \
 "../../../bd/design_1/ipshared/9cc4/hdl/AXI_PWM_v1_0_S00_AXI.vhd" \
 "../../../bd/design_1/ipshared/9cc4/hdl/AXI_PWM_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_AXI_PWM_0_0/sim/design_1_AXI_PWM_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_timer_0_0/sim/design_1_axi_timer_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_timer_1_0/sim/design_1_axi_timer_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_timer_2_0/sim/design_1_axi_timer_2_0.vhd" \
 "../../../bd/design_1/sim/design_1.vhd" \
 
 nosort

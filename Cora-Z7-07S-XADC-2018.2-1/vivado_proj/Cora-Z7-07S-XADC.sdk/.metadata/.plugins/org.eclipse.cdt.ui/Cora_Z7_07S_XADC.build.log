@@ -1,8 +1,0 @@
-12:57:32 **** Incremental Build of configuration Debug for project Cora_Z7_07S_XADC ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-
-12:57:33 Build Finished (took 516ms)
-

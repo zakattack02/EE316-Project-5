@@ -2,83 +2,119 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Apr  4 12:52:44 2024
-# Process ID: 6044
-# Current directory: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10496 C:\Users\englena\Documents\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.xpr
-# Log file: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/vivado.log
-# Journal file: C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj\vivado.jou
+# Start of session at: Fri Apr  5 15:03:55 2024
+# Process ID: 3116
+# Current directory: C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11352 C:\Users\englena\Documents\SDK_PWM_SERVO\vivado_proj\Cora-Z7-07S-XADC.xpr
+# Log file: C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/vivado.log
+# Journal file: C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.xpr
-update_compile_order -fileset sources_1
-create_bd_design "design_2"
-update_compile_order -fileset sources_1
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-set_property  ip_repo_paths  {c:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ipdefs/repo_0 C:/Users/englena/Documents/AXI_PWM/ip_repo} [current_project]
-update_ip_catalog
-set_property BOARD_PART_REPO_PATHS {C:/Users/lehmanta/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
-set_param board.repoPaths {C:/Users/lehmanta/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}
-set_property BOARD_PART_REPO_PATHS {C:/Users/lehmanta/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
-set_param board.repoPaths {C:/Users/lehmanta/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}
+open_project C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.xpr
+open_bd_design {C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
 startgroup
-create_bd_cell -type ip -vlnv xilinx.com:user:AXI_PWM:1.0 AXI_PWM_0
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0
 endgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/AXI_PWM_0/S00_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins AXI_PWM_0/S00_AXI]
-set_property location {3 786 -107} [get_bd_cells AXI_PWM_0]
+set_property location {3.5 1454 236} [get_bd_cells axi_timer_0]
 startgroup
-create_bd_port -dir O PWM_servo
-connect_bd_net [get_bd_pins /AXI_PWM_0/PWM0] [get_bd_ports PWM_servo]
+create_bd_port -dir O DC_motor
+connect_bd_net [get_bd_pins /axi_timer_0/pwm0] [get_bd_ports DC_motor]
 endgroup
-save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_1
+endgroup
+startgroup
+create_bd_port -dir O Buzzer
+connect_bd_net [get_bd_pins /axi_timer_1/pwm0] [get_bd_ports Buzzer]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_timer_0/S_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_timer_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_timer_1/S_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_timer_1/S_AXI]
+endgroup
+regenerate_bd_layout -routing
+set_property location {1419 195} [get_bd_ports PWM_servo]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_2
+endgroup
+startgroup
+create_bd_port -dir O PMOD_LEDs
+connect_bd_net [get_bd_pins /axi_timer_2/pwm0] [get_bd_ports PMOD_LEDs]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_timer_2/S_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_timer_2/S_AXI]
+regenerate_bd_layout -routing
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_nets PWM_0_pwm] [get_bd_cells PWM_0]
+delete_bd_objs [get_bd_ports pwm_0]
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+reset_target all [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+report_ip_status -name ip_status 
+reset_target all [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ip_user_files -ipstatic_source_dir C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/modelsim} {questa=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/questa} {riviera=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/riviera} {activehdl=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+file delete -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+make_wrapper -files [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+launch_sdk -workspace C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+report_ip_status -name ip_status 
 reset_run synth_1
 launch_runs synth_1 -jobs 6
 wait_on_run synth_1
-launch_runs impl_3 -jobs 6
+open_run synth_1 -name synth_1
+launch_runs impl_3 -to_step write_bitstream -jobs 6
 wait_on_run impl_3
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-reset_target all [get_files  C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
-export_ip_user_files -of_objects  [get_files  C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
-export_ip_user_files -of_objects  [get_files C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
-file delete -force C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
-update_compile_order -fileset sources_1
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_2/design_2.bd}
-export_ip_user_files -of_objects  [get_files C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_2/design_2.bd] -no_script -reset -force -quiet
-remove_files  C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_2/design_2.bd
-file delete -force C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_2
-set_property source_mgmt_mode DisplayOnly [current_project]
-report_ip_status -name ip_status 
-generate_target all [get_files  C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
-export_ip_user_files -of_objects [get_files C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ip_user_files -ipstatic_source_dir C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/modelsim} {questa=C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/questa} {riviera=C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/riviera} {activehdl=C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-show_objects -name design_1 [get_bd_cells -hierarchical "*" ]
-make_wrapper -files [get_files C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -top
-add_files -norecurse C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
-close_bd_design [get_bd_designs design_1]
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-reset_run synth_1
-launch_runs impl_3 -jobs 6
-wait_on_run impl_3
-reset_run impl_3
-launch_runs impl_3 -jobs 6
-wait_on_run impl_3
-open_run impl_3
+file copy -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+
+file copy -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+file copy -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+
+file mkdir C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk
+file copy -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {4.5 1353 1262} [get_bd_cells xadc_wiz_0]
+undo
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets axi_gpio_0_ip2intc_irpt]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property location {1 84 630} [get_bd_cells xlconcat_0]
+set_property -dict [list CONFIG.NUM_PORTS {4}] [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins axi_gpio_0/ip2intc_irpt] [get_bd_pins xlconcat_0/In0]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins processing_system7_0/IRQ_F2P]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins axi_timer_0/interrupt] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins axi_timer_1/interrupt] [get_bd_pins xlconcat_0/In2]
+connect_bd_net [get_bd_pins axi_timer_2/interrupt] [get_bd_pins xlconcat_0/In3]
+validate_bd_design
+regenerate_bd_layout
+export_ip_user_files -of_objects  [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+file delete -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+reset_target all [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+save_bd_design
+generate_target all [get_files  C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ip_user_files -ipstatic_source_dir C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/modelsim} {questa=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/questa} {riviera=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/riviera} {activehdl=C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
 reset_run synth_1
 launch_runs impl_3 -to_step write_bitstream -jobs 6
 wait_on_run impl_3
-refresh_design
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-open_bd_design {C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
-reset_run impl_3 -prev_step 
-launch_runs impl_3 -to_step write_bitstream -jobs 6
-wait_on_run impl_3
-file copy -force C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+file mkdir C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk
+file copy -force C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
 
-launch_sdk -workspace C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
-file mkdir C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk
-file copy -force C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/design_1_wrapper.sysdef C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
-
-launch_sdk -workspace C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Users/englena/Documents/SDK_PWM_SERVO/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
