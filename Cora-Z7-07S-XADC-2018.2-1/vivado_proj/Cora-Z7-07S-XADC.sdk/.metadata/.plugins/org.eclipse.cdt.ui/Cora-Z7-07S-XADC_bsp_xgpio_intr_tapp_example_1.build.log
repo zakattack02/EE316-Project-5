@@ -1,0 +1,15 @@
+18:47:04 **** Auto Build of configuration Debug for project Cora-Z7-07S-XADC_bsp_xgpio_intr_tapp_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xgpio_intr_tapp_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpio_intr_tapp_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Cora-Z7-07S-XADC_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xgpio_intr_tapp_example.d" -MT"src/xgpio_intr_tapp_example.o" -o "src/xgpio_intr_tapp_example.o" "../src/xgpio_intr_tapp_example.c"
+../src/xgpio_intr_tapp_example.c:72:10: fatal error: xgpio_intr_tapp_example.h: No such file or directory
+ #include "xgpio_intr_tapp_example.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/xgpio_intr_tapp_example.o] Error 1
+
+18:47:05 Build Finished (took 998ms)
+

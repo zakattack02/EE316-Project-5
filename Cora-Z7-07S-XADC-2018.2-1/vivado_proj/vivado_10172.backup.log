@@ -1,0 +1,140 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr  6 16:41:44 2024
+# Process ID: 10172
+# Current directory: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23936 C:\Temp\EE316\p5\xadc_example\EE316-Project-5\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.xpr
+# Log file: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/vivado.log
+# Journal file: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj'
+WARNING: [Board 49-91] Board repository path 'C:/Users/olaol/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/olaol/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/ip_repo/myLCD_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/ip_repo/myLCD_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/ip_repo/myLCD_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/ip_repo/myLCD_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/ip_repo/myLCD_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ipdefs/repo_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 771.637 ; gain = 129.668
+open_bd_design {C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- digilentinc.com:IP:PWM:2.0 - PWM_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+Adding component instance block -- xilinx.com:user:myLCD:1.0 - myLCD_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_1
+Successfully read diagram <design_1> from BD file <C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 907.559 ; gain = 97.051
+connect_bd_net [get_bd_pins axi_timer_1/capturetrig1] [get_bd_pins axi_timer_1/capturetrig0]
+delete_bd_objs [get_bd_nets Net2]
+startgroup
+create_bd_port -dir I capturetrig1
+connect_bd_net [get_bd_pins /axi_timer_1/capturetrig1] [get_bd_ports capturetrig1]
+endgroup
+startgroup
+create_bd_port -dir I capturetrig0
+connect_bd_net [get_bd_pins /axi_timer_1/capturetrig0] [get_bd_ports capturetrig0]
+endgroup
+delete_bd_objs [get_bd_nets capturetrig1_1]
+connect_bd_net [get_bd_ports capturetrig0] [get_bd_pins axi_timer_1/capturetrig1]
+startgroup
+set_property -dict [list CONFIG.TRIG1_ASSERT {Active_High}] [get_bd_cells axi_timer_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.TRIG1_ASSERT {Active_Low}] [get_bd_cells axi_timer_1]
+endgroup
+startgroup
+endgroup
+startgroup
+endgroup
+save_bd_design
+Wrote  : <C:\Temp\EE316\p5\xadc_example\EE316-Project-5\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_3 -to_step write_bitstream -jobs 12
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+Wrote  : <C:\Temp\EE316\p5\xadc_example\EE316-Project-5\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myLCD_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_1 .
+WARNING: [IP_Flow 19-3452] Invalid long/float value '5e+07' specified for parameter 'FREQ_HZ(CLK)' for design_1_auto_pc_0.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Sat Apr  6 16:57:45 2024] Launched synth_1...
+Run output will be captured here: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/synth_1/runme.log
+[Sat Apr  6 16:57:45 2024] Launched impl_3...
+Run output will be captured here: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/runme.log
+launch_runs: Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 1167.371 ; gain = 227.887
+set_property name trigger [get_bd_ports pwm0]
+set_property name echo [get_bd_ports capturetrig0]
+save_bd_design
+Wrote  : <C:\Temp\EE316\p5\xadc_example\EE316-Project-5\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_target all [get_files  C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+Wrote  : <C:\Temp\EE316\p5\xadc_example\EE316-Project-5\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myLCD_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_1 .
+WARNING: [IP_Flow 19-3452] Invalid long/float value '5e+07' specified for parameter 'FREQ_HZ(CLK)' for design_1_auto_pc_0.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 1444.844 ; gain = 54.285
+export_ip_user_files -of_objects [get_files C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/sim_scripts -ip_user_files_dir C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ip_user_files -ipstatic_source_dir C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/modelsim} {questa=C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/questa} {riviera=C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/riviera} {activehdl=C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_3 -to_step write_bitstream -jobs 12
+[Sat Apr  6 17:19:59 2024] Launched synth_1...
+Run output will be captured here: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/synth_1/runme.log
+[Sat Apr  6 17:19:59 2024] Launched impl_3...
+Run output will be captured here: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.runs/impl_3/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  6 18:52:38 2024...

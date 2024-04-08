@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr  6 16:41:44 2024
+# Process ID: 10172
+# Current directory: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23936 C:\Temp\EE316\p5\xadc_example\EE316-Project-5\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.xpr
+# Log file: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/vivado.log
+# Journal file: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.xpr
+open_bd_design {C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
+connect_bd_net [get_bd_pins axi_timer_1/capturetrig1] [get_bd_pins axi_timer_1/capturetrig0]
+delete_bd_objs [get_bd_nets Net2]
+startgroup
+create_bd_port -dir I capturetrig1
+connect_bd_net [get_bd_pins /axi_timer_1/capturetrig1] [get_bd_ports capturetrig1]
+endgroup
+startgroup
+create_bd_port -dir I capturetrig0
+connect_bd_net [get_bd_pins /axi_timer_1/capturetrig0] [get_bd_ports capturetrig0]
+endgroup
+delete_bd_objs [get_bd_nets capturetrig1_1]
+connect_bd_net [get_bd_ports capturetrig0] [get_bd_pins axi_timer_1/capturetrig1]
+startgroup
+set_property -dict [list CONFIG.TRIG1_ASSERT {Active_High}] [get_bd_cells axi_timer_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.TRIG1_ASSERT {Active_Low}] [get_bd_cells axi_timer_1]
+endgroup
+startgroup
+endgroup
+startgroup
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_3 -to_step write_bitstream -jobs 12
+wait_on_run impl_3
+set_property name trigger [get_bd_ports pwm0]
+set_property name echo [get_bd_ports capturetrig0]
+save_bd_design
+reset_target all [get_files  C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/sim_scripts -ip_user_files_dir C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ip_user_files -ipstatic_source_dir C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/modelsim} {questa=C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/questa} {riviera=C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/riviera} {activehdl=C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_3 -to_step write_bitstream -jobs 12
+wait_on_run impl_3

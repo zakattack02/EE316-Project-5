@@ -1,0 +1,47 @@
+			//top line
+				MYLCD_mWriteReg(BaseAddress, 32, 0x5354453a); //STE:
+				MYLCD_mWriteReg(BaseAddress, 4, 0x456e2020); //En
+				MYLCD_mWriteReg(BaseAddress, 8, 0x4453543a); //DST:
+				MYLCD_mWriteReg(BaseAddress, 12, 0x3f3f6674); // ??ft
+
+				//bottom line
+				MYLCD_mWriteReg(BaseAddress, 16, 0x5352433a); //SRC:
+				MYLCD_mWriteReg(BaseAddress, 20, 0x504f5420); //POT
+				MYLCD_mWriteReg(BaseAddress, 24, 0x20202020); //
+				MYLCD_mWriteReg(BaseAddress, 28, 0x20202020); //
+-----------------------------------------------------------------------------------------------------
+				//top line
+				MYLCD_mWriteReg(BaseAddress, 32, 0x5354453a); //STE:
+				MYLCD_mWriteReg(BaseAddress, 4, 0x456e2020); //En
+				MYLCD_mWriteReg(BaseAddress, 8, 0x4453543a); //DST:
+				MYLCD_mWriteReg(BaseAddress, 12, 0x3f3f6674); // ??ft
+
+				//bottom line
+				MYLCD_mWriteReg(BaseAddress, 16, 0x5352433a); //SRC:
+				MYLCD_mWriteReg(BaseAddress, 20, 0x50687472); //Phtr
+				MYLCD_mWriteReg(BaseAddress, 24, 0x73747220); //str
+				MYLCD_mWriteReg(BaseAddress, 28, 0x20202020); //
+-----------------------------------------------------------------------------------------------------
+			//top line
+			MYLCD_mWriteReg(BaseAddress, 32, 0x5354453a); //STE:
+			MYLCD_mWriteReg(BaseAddress, 4, 0x44697320); //Dis
+			MYLCD_mWriteReg(BaseAddress, 8, 0x4453543a); //DST:
+			MYLCD_mWriteReg(BaseAddress, 12, 0x3f3f6674); // ??ft
+
+			//bottom line
+			MYLCD_mWriteReg(BaseAddress, 16, 0x5352433a); //SRC:
+			MYLCD_mWriteReg(BaseAddress, 20, 0x504f5420); //POT
+			MYLCD_mWriteReg(BaseAddress, 24, 0x20202020); //
+			MYLCD_mWriteReg(BaseAddress, 28, 0x20202020); //
+-----------------------------------------------------------------------------------------------------
+		//top line
+		MYLCD_mWriteReg(BaseAddress, 32, 0x5354453a); //STE:
+		MYLCD_mWriteReg(BaseAddress, 4, 0x52737420); //Rst
+		MYLCD_mWriteReg(BaseAddress, 8, 0x4453543a); //DST:
+		MYLCD_mWriteReg(BaseAddress, 12, 0x3f3f6674); // ??ft
+
+		//bottom line
+		MYLCD_mWriteReg(BaseAddress, 16, 0x5352433a); //SRC:
+		MYLCD_mWriteReg(BaseAddress, 20, 0x504f5420); //POT
+		MYLCD_mWriteReg(BaseAddress, 24, 0x20202020); //
+		MYLCD_mWriteReg(BaseAddress, 28, 0x20202020); //

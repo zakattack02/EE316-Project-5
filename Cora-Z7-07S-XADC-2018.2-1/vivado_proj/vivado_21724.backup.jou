@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Apr  7 20:41:41 2024
+# Process ID: 21724
+# Current directory: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19580 C:\Temp\EE316\p5\xadc_example\EE316-Project-5\Cora-Z7-07S-XADC-2018.2-1\vivado_proj\Cora-Z7-07S-XADC.xpr
+# Log file: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/vivado.log
+# Journal file: C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.xpr
+open_bd_design {C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.srcs/sources_1/bd/design_1/design_1.bd}
+launch_sdk -workspace C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk -hwspec C:/Temp/EE316/p5/xadc_example/EE316-Project-5/Cora-Z7-07S-XADC-2018.2-1/vivado_proj/Cora-Z7-07S-XADC.sdk/design_1_wrapper.hdf
